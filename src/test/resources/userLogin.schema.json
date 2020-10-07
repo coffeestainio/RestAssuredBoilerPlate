@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "message",
+    "token",
+    "user"
+  ],
+  "properties": {
+    "message": {
+      "$id": "#/properties/message",
+      "type": "string",
+      "title": "The message schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "User signed in"
+      ]
+    },
+    "token": {
+      "$id": "#/properties/token",
+      "type": "object",
+      "title": "The token schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NfdXVpZCI6IjVhMjYxYTQwLTBhYTAtNDU2MS1hZTdjLTQzMzkzYTUwY2JjMiIsImF1dGhvcml6ZWQiOnRydWUsImV4cCI6MTYwMjAzMzkyMywidXNlcl9pZCI6MTd9.ozPUykygYU5t_JpcPU8snn4----Je1Vf-V13YsAFGqI",
+          "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDI2Mzc4MjMsInJlZnJlc2hfdXVpZCI6IjlkMWE3Yjg4LTc0ZTktNDhiOC04MTExLWJkZDZkNWMzOWIzNiIsInVzZXJfaWQiOjE3fQ._zabaO1urqjjJ4DqW31HSpcPS9LtusFSTBPYEOZ860M"
+        }
+      ],
+      "required": [
+        "access_token",
+        "refresh_token"
+      ],
+      "properties": {
+        "access_token": {
+          "$id": "#/properties/token/properties/access_token",
+          "type": "string",
+          "title": "The access_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NfdXVpZCI6IjVhMjYxYTQwLTBhYTAtNDU2MS1hZTdjLTQzMzkzYTUwY2JjMiIsImF1dGhvcml6ZWQiOnRydWUsImV4cCI6MTYwMjAzMzkyMywidXNlcl9pZCI6MTd9.ozPUykygYU5t_JpcPU8snn4----Je1Vf-V13YsAFGqI"
+          ]
+        },
+        "refresh_token": {
+          "$id": "#/properties/token/properties/refresh_token",
+          "type": "string",
+          "title": "The refresh_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDI2Mzc4MjMsInJlZnJlc2hfdXVpZCI6IjlkMWE3Yjg4LTc0ZTktNDhiOC04MTExLWJkZDZkNWMzOWIzNiIsInVzZXJfaWQiOjE3fQ._zabaO1urqjjJ4DqW31HSpcPS9LtusFSTBPYEOZ860M"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "user": {
+      "$id": "#/properties/user",
+      "type": "object",
+      "title": "The user schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "id",
+        "email",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#/properties/user/properties/id",
+          "type": "integer",
+          "title": "The id schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            17
+          ]
+        },
+        "email": {
+          "$id": "#/properties/user/properties/email",
+          "type": "string",
+          "title": "The email schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "pablillo@calvo.com"
+          ]
+        },
+        "name": {
+          "$id": "#/properties/user/properties/name",
+          "type": "string",
+          "title": "The name schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Pablo Calvo"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
