@@ -4,7 +4,6 @@
     <parameter name="baseUrl" value="https://api-coffee-testing.herokuapp.com/"></parameter>
     <test name="Regression" >
         <classes>
-            <class name="UserTests" />
             <class name="NonApiTests" />
         </classes>
     </test>

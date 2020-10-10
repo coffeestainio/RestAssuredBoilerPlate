@@ -4,7 +4,6 @@
     <parameter name="baseUrl" value="http://localhost:9000"></parameter>
     <test name="Regression" >
         <classes>
-            <class name="UserTests" />
             <class name="NonApiTests" />
         </classes>
     </test>
